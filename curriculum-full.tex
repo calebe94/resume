@@ -9,7 +9,7 @@
 
 % personal data
 \name{Edimar Calebe}{Castanho}
-\title{Senior Software Engineer \& Cloud Architect}
+\title{Senior Python Developer \& Cloud Engineer}
 \address{Curitiba, Brazil}{Open to relocation (Europe \& US)}
 \email{contato@calebe.dev.br}
 \phone[mobile]{+55~(41)~99827~1302}
@@ -23,72 +23,69 @@
 
 \section{Summary}
 \cvitem{}{
-Senior Software Engineer and Cloud Architect combining deep embedded systems experience with modern cloud-native engineering and DevOps practices. Track record designing and shipping end-to-end solutions — from realtime firmware (ESP32, FreeRTOS, TM4C, PIC) and IoT gateways to backend services and infrastructure automation (Python, FastAPI/Flask, MQTT, SNMP). Strong experience with Infrastructure as Code, CI/CD and GitOps (Terraform, Ansible, GitLab/GitHub Actions, ArgoCD), virtualization and IaaS (OpenStack, KVM, Incus/LXD), and container platforms (Docker, Kubernetes). Experienced in developer tooling, image engineering and automation of deployment pipelines to improve reliability and time-to-production. Fluent in English and Portuguese; targeting senior engineering roles in Europe and the US.
+Senior Software Engineer specialized in backend and cloud development using \textbf{Python, FastAPI, Flask, Django, and PostgreSQL}.
+Combines strong software engineering principles with infrastructure and DevOps expertise to deliver robust, scalable web applications and APIs.
+Experienced designing high-performance RESTful services, data pipelines, and automation tools for cloud environments (OpenStack, AWS).
+Proficient in asynchronous programming (asyncio), ORM integration (SQLAlchemy, Django ORM), API design, and CI/CD automation.
+Fluent in English and Portuguese, targeting backend-focused senior engineering roles in Europe and the US.
 }
 
 \section{Professional Experience}
-\cventry{2023 -- Present}{Senior Cloud Engineer}{LuizaLabs (Magalu Cloud)}{Curitiba, Brazil}{}{
+
+\cventry{2023 -- Present}{Senior Cloud \& Backend Engineer}{LuizaLabs (Magalu Cloud)}{Curitiba, Brazil}{}{
 \begin{itemize}
-\item Led the design and automation of virtual machine provisioning workflows using OpenStack (Yoga) and Incus, ensuring high reliability and scalability in Magalu Cloud's IaaS platform.
-\item Developed Python-based automation tools leveraging asyncio, Pydantic, and pytest to manage VM lifecycle operations (start, stop, restart, freeze, unfreeze) and integrate with internal APIs.
-\item Created and maintained custom Ubuntu and Windows Server images, implementing automated SQL Server installation with Ansible and Cloudbase-init, as well as image generalization workflows to streamline deployments.
-\item Designed Terraform modules for provisioning server-client benchmarking environments, integrating sysbench, fio, and iperf to test CPU, memory, disk, and network performance.
-\item Researched and implemented optimizations for KVM-based workloads, focusing on performance tuning, image compression, and storage efficiency with QCOW2.
-\item Enhanced OpenStack Glance and Nova workflows to reduce image deployment times and operational overhead.
-\item Integrated image build pipelines with CI/CD workflows, ensuring consistent, reproducible, and compliant image releases across multiple regions.
-\item Collaborated with security teams to proactively address OS vulnerabilities across Linux distributions and Windows Server versions.
-\item Conducted API comparisons between Magalu Cloud and Incus to guide platform interoperability and feature parity strategies.
-\item Provided technical guidance and mentorship on cloud image engineering, OpenStack, and virtualization best practices.
-\item \textbf{Technologies:} Python, asyncio, Pydantic, pytest, OpenStack (Yoga: Glance, Nova, Cinder, Neutron), Incus, KVM/QEMU, Ansible, Cloudbase-init, Terraform, Juju, Docker, GitLab CI/CD, QCOW2, sysbench, fio, iperf, AWS (EC2, S3, Lambda)
+\item Designed and implemented Python web services using \textbf{FastAPI} and \textbf{Flask} to automate VM lifecycle management (provisioning, snapshotting, backups, image releases) in Magalu Cloud’s IaaS platform.
+\item Built RESTful APIs and internal developer tools leveraging \textbf{asyncio}, \textbf{Pydantic}, and \textbf{SQLAlchemy} to manage compute, storage, and network resources.
+\item Developed automation scripts and backend microservices for image engineering pipelines (Ubuntu \& Windows Server), using \textbf{PostgreSQL} as the primary metadata store.
+\item Integrated internal APIs with OpenStack (Glance, Nova, Cinder, Neutron) to improve platform observability, reliability, and deployment speed.
+\item Designed Terraform modules and Python utilities for end-to-end benchmark orchestration (sysbench, fio, iperf), deployed via CI/CD.
+\item Built and maintained CI/CD pipelines in \textbf{GitLab} and \textbf{GitHub Actions} to automate testing, image builds, and API deployments.
+\item Collaborated with cross-functional teams to enforce coding standards, schema versioning, and data validation in Python web services.
+\item \textbf{Technologies:} Python (FastAPI, Flask, SQLAlchemy, Pydantic, pytest, asyncio), PostgreSQL, OpenStack, KVM, Docker, Terraform, Ansible, GitLab CI/CD, AWS (EC2, S3, Lambda)
 \end{itemize}
 }
 
-\cventry{2020 -- 2023}{Embedded Systems Analyst}{T2I Group}{Curitiba, Brazil}{}{
+\cventry{2020 -- 2023}{Embedded \& Backend Systems Analyst}{T2I Group}{Curitiba, Brazil}{}{
 \begin{itemize}
-\item Led the development of a \textbf{telemetry system for highway weather stations}, implementing the SNMP protocol (OID tree management) on ESP32 microcontrollers via a custom fork of the GNU LwIP stack.
-\item Designed and built cross-platform mobile applications in \textbf{Flutter} for Android and iOS, delivering Material Design-compliant UIs and integrating real-time IoT data feeds.
-\item Architected and developed \textbf{MIP V2}, a vehicle detection and classification system for highways, combining Texas Instruments TM4C microcontrollers with ESP32 modules to collect sensor data, identify vehicle types, and detect axle configurations.
-\item Built the embedded firmware in \textbf{C/C++ (FreeRTOS, ESP-IDF)} and designed server-side components using a custom Debian-based Linux distribution (“T2Ibian”) with pre-seeded installation for rapid deployment.
-\item Implemented the \textbf{data aggregation server} in Python with Flask, using Mosquitto (MQTT) for message brokering between roadside units and central systems.
-\item Migrated and consolidated all company repositories to \textbf{GitLab} with self-hosted runners, establishing CI/CD pipelines for automated builds and deployments; later transitioned infrastructure to GitHub Actions.
-\item Utilized a diverse stack including \textbf{Python, Docker, AWS, GitLab CI/CD, GitHub Actions, Jenkins, C/C++, Flask} to deliver production-ready embedded and cloud-integrated solutions.
+\item Architected and developed a \textbf{Flask-based IoT data aggregation server} integrating with MQTT brokers (Mosquitto) and PostgreSQL for storage and analytics of telemetry data from distributed weather and traffic monitoring systems.
+\item Developed and maintained REST APIs for real-time telemetry ingestion and mobile app integration, ensuring data consistency and scalability.
+\item Built internal dashboards using \textbf{Flask + Jinja2} for monitoring IoT sensor data, alerting thresholds, and managing user authentication.
+\item Created asynchronous background workers (Python + Celery) for message processing and data normalization.
+\item Automated build and deployment pipelines using Docker, GitLab CI/CD, and AWS infrastructure services.
+\item \textbf{Technologies:} Python (Flask, Celery, SQLAlchemy), PostgreSQL, MQTT, Docker, GitLab CI/CD, AWS, Linux, C/C++ (FreeRTOS, ESP-IDF)
 \end{itemize}
 }
 
-\cventry{2019 -- 2020}{Embedded Systems Intern}{Alta Rail Technology (ART)}{Colombo, Brazil}{}{
+\cventry{2019 -- 2020}{Backend Developer Intern}{Alta Rail Technology (ART)}{Colombo, Brazil}{}{
 \begin{itemize}
-\item Developed a \textbf{Python + Flask dashboard} to display real-time train operational data, including wagon count, per-wagon sensor status, and temperature readings, directly to locomotive operators. Integrated with proprietary embedded hardware (SOBC and HMI) as part of the company’s commercial offering.
-\item Migrated to \textbf{C\#} development for Windows Server-based router software, implementing an optimized communication library that reduced satellite transmission costs by minimizing redundant OSI layer headers.
-\item Collaborated on embedded systems software for train control hardware, working with \textbf{FreeRTOS, Linux, and Yocto Project} to enhance reliability and maintainability.
-\item Conducted unit and integration testing using \textbf{VectorCast} and Python test scripts, ensuring compliance with railway safety and performance standards.
-\item Contributed to cross-functional teams to deliver hardware-software integration projects, balancing performance, resource constraints, and communication protocol efficiency.
+\item Developed a \textbf{Python + Flask web dashboard} for real-time train telemetry visualization, integrating with PostgreSQL and embedded systems via REST APIs.
+\item Designed a lightweight data ingestion API that collected data from locomotive controllers and displayed per-wagon diagnostics to operators.
+\item Assisted in optimizing backend communication between train routers and the central platform, reducing latency and transmission overhead.
+\item Participated in testing and validation of Python-based backend tools using pytest and VectorCast.
+\item \textbf{Technologies:} Python, Flask, PostgreSQL, REST APIs, Docker, Linux, C\#, FreeRTOS
 \end{itemize}
 }
 
 \cventry{2017}{Embedded Systems Intern}{T2I Group}{Curitiba, Brazil}{}{
 \begin{itemize}
-\item Designed and implemented an \textbf{OBD-II automotive fleet monitoring device} using PIC18F microcontrollers, proprietary vehicle interface chips, GSM/GPRS, and GPS/GNSS modules to collect and transmit real-time vehicle diagnostics and geolocation data to a REST API.
-\item Developed IoT solutions leveraging \textbf{Arduino, Bluetooth Low Energy (BLE) beacons}, and GPRS integration for museum exhibit tracking and interactive visitor experiences.
-\item Built an \textbf{aquarium automation system} on a Raspberry Pi 3-based SBC running Linux, integrating Arduino controllers to schedule lighting, regulate intensity, and automate environmental events via a web-based dashboard (Node.js + Vue.js).
-\item Programmed embedded firmware in \textbf{C/C++ (AVR, ATmega328, PIC18F)} and Python, integrating FreeRTOS for real-time control and peripheral management.
-\item Utilized modern development tools and workflows including Docker, Vagrant, Geany, GTK+, and Qt for cross-platform application development.
-\item Collaborated in a multidisciplinary engineering team, following structured development processes to deliver reliable embedded and IoT solutions for commercial applications.
+\item Implemented Python-based backend services to collect and expose telemetry data from IoT devices via REST APIs.
+\item Created simple web dashboards for real-time device monitoring and automation control using Flask and SQLite.
+\item Developed firmware and supporting backend services to connect OBD-II vehicle devices and IoT gateways to the company’s Python-based API layer.
+\item \textbf{Technologies:} Python (Flask, SQLite), C/C++, FreeRTOS, Linux, GSM/GPRS, GPS/GNSS
 \end{itemize}
 }
 
 \section{Technical Skills}
-\cvitem{Core Languages}{Python, C/C++, SQL, Bash / Shell}
-\cvitem{Web \& APIs}{FastAPI, Flask, Django, RESTful APIs, Node.js, Vue.js}
-\cvitem{Cloud \& Virtualization}{OpenStack (Glance, Nova, Cinder, Neutron), AWS (EC2, S3, Lambda, Glue, CDK), GCP, Incus (LXD), KVM/QEMU}
+\cvitem{Core Languages}{Python, SQL, C/C++, Bash / Shell}
+\cvitem{Frameworks \& APIs}{FastAPI, Flask, Django, SQLAlchemy, Pydantic, Celery}
+\cvitem{Databases}{PostgreSQL, MySQL, SQLite, Redis, Elasticsearch}
+\cvitem{Cloud \& Virtualization}{OpenStack (Glance, Nova, Cinder, Neutron), AWS (EC2, S3, Lambda), Incus (LXD), KVM/QEMU}
 \cvitem{Containers \& Orchestration}{Docker, Kubernetes, Docker Compose}
 \cvitem{IaC \& Configuration}{Terraform, Ansible, Juju}
-\cvitem{CI/CD \& GitOps}{GitLab CI/CD / GitLab Actions, GitHub Actions, Jenkins, ArgoCD, GitLab runners}
-\cvitem{Embedded \& IoT}{ESP32 (ESP-IDF), FreeRTOS, TM4C (Tiva C), PIC18F, ATmega328 (AVR), Arduino, Yocto Project, Linux (Debian/T2Ibian)}
-\cvitem{Networking \& Protocols}{MQTT (Mosquitto), SNMP, OBD-II, GSM/GPRS, GPS/GNSS, BLE, OSI-layer optimizations}
-\cvitem{Data \& Databases}{PostgreSQL, MySQL, SQLite, Snowflake, Elasticsearch}
-\cvitem{Testing \& Observability}{pytest, VectorCast, sysbench, fio, iperf}
-\cvitem{Tools \& Utilities}{Git, Docker, Vagrant, Cloudbase-init, cloud-init, Geany, Qt, GTK+}
-\cvitem{Methodologies \& Expertise}{Infrastructure as Code, Cloud Automation, Scalable Microservices, DevOps, GitOps, Agile / Scrum}
+\cvitem{CI/CD \& Automation}{GitLab CI/CD, GitHub Actions, Jenkins, ArgoCD}
+\cvitem{Testing \& Quality}{pytest, unittest, coverage, sysbench, fio, iperf}
+\cvitem{Frontend (basic)}{HTML, CSS, Jinja2, Vue.js (integration)}
+\cvitem{Methodologies}{REST API Design, Microservices, Asynchronous Programming, Cloud Automation, DevOps, Agile/Scrum}
 \cvitem{Languages}{Portuguese (Native), English (Fluent)}
 
 \section{Education}

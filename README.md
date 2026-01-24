@@ -1,4 +1,4 @@
-# Calebe94 CV/Resume
+# Calebe94's Resume
 
 This repository provides a highly customizable and professional CV/Resume generator built using LaTeX and the `moderncv` package. It allows you to easily maintain and generate multiple versions of your curriculum vitae in PDF format, including localized versions (e.g., English and Portuguese).
 
@@ -27,21 +27,21 @@ To use this CV generator, you need to have a LaTeX distribution installed on you
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/calebe94/calebe94-cv.git
-    cd calebe94-cv
+    git clone https://github.com/calebe94/resume.git
+    cd resume
     ```
 
 ## Customization
 
 The CV content and personal information are primarily managed in the following files:
 
-*   `/home/calebe94/Projects/calebe94-cv/info.yml`: This YAML file stores your personal details (name, email, social links) and localized summaries for different language versions.
-*   `/home/calebe94/Projects/calebe94-cv/cv.tex`: This is the main LaTeX template that defines the structure and sections of your CV. You can duplicate this file (e.g., `curriculum-full.tex`, `curriculum-pt.tex`, `curriculum.tex`) and customize the content within each section (`\section`, `\cventry`, `\cvitem`).
+*   `info.yml`: This YAML file stores your personal details (name, email, social links) and localized summaries for different language versions.
+*   `cv.tex`: This is the main LaTeX template that defines the structure and sections of your CV. You can duplicate this file (e.g., `curriculum-full.tex`, `curriculum-pt.tex`, `curriculum.tex`) and customize the content within each section (`\section`, `\cventry`, `\cvitem`).
 
 To customize your CV:
 
-1.  **Edit Personal Information:** Update your name, contact details, and social links in `/home/calebe94/Projects/calebe94-cv/info.yml`.
-2.  **Update Summaries:** Modify the `summary` field under the `en:` and `pt:` sections in `/home/calebe94/Projects/calebe94-cv/info.yml` for English and Portuguese versions, respectively.
+1.  **Edit Personal Information:** Update your name, contact details, and social links in `info.yml`.
+2.  **Update Summaries:** Modify the `summary` field under the `en:` and `pt:` sections in `info.yml` for English and Portuguese versions, respectively.
 3.  **Adjust CV Sections:** Open `cv.tex` (or the specific `curriculum-*.tex` file you are working on) and modify the content within the `\section`, `\cventry`, and `\cvitem` commands to reflect your education, work experience, skills, projects, etc.
     *   `\name{First}{Last}`
     *   `\title{Your Title}`
@@ -88,4 +88,4 @@ The generated PDF files will be located in the root directory of the project (e.
 
 ## License
 
-This project is licensed under the MIT License - see the `/home/calebe94/Projects/calebe94-cv/LICENSE` file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
