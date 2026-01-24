@@ -5,26 +5,17 @@ on:
     tags:
       - "*"
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: texlive/texlive:latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Cache TeXLive dependencies
-        id: cache-texlive
-        uses: actions/cache@v4
-        with:
-          path: /usr/share/texlive
-          key: texlive-${{ runner.os }}-${{ hashFiles('**/*.tex') }}
-
-      - name: Install TeXLive dependencies
-        if: steps.cache-texlive.outputs.cache-hit != 'true'
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y texlive texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-extra
+        uses: actions/checkout@v4
 
       - name: Build PDFs
         run: make all
