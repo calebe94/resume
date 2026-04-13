@@ -86,6 +86,30 @@ Navigate to the root directory of the cloned repository in your terminal and run
 
 The generated PDF files will be located in the root directory of the project (e.g., `curriculum.pdf`, `curriculum-pt.pdf`, `curriculum-full.pdf`).
 
+### Linting
+
+Run `chktex` on all `.tex` files to catch common LaTeX issues:
+
+```bash
+make lint
+```
+
+### Testing
+
+Verify that all `.tex` files compile without errors:
+
+```bash
+make test
+```
+
+### Cleaning
+
+Remove all build artifacts (`.aux`, `.log`, `.out`, `.pdf`):
+
+```bash
+make clean
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
