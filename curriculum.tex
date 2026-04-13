@@ -6,7 +6,7 @@
 \nopagenumbers
 
 \name{Edimar Calebe}{Castanho}
-\title{Senior Backend \& Cloud Infrastructure Engineer}
+\title{Senior Software Engineer — Backend, Cloud \& Web}
 \address{Curitiba, Brazil}{Open to relocation (Europe \& US)}
 \email{contato@calebe.dev.br}
 \phone[mobile]{+55~(41)~99827~1302}
@@ -19,16 +19,26 @@
 
 \section{Summary}
 \cvitem{}{
-Expert senior engineer with 7+ years of proven experience in backend engineering, cloud infrastructure, and IoT architecture.
-Proficient in delivering scalable microservices and RESTful APIs using Python, with deep knowledge of relational and NoSQL databases.
-Extensive experience in advanced infrastructure automation and CI/CD pipelines on public clouds (AWS, GCP) and OpenStack with Terraform and Ansible.
-Strong communication skills in cross-functional Agile/Scrum teams.
+Expert senior engineer with 7+ years of proven experience in backend engineering, cloud infrastructure, and full-stack web development.
+Proficient in delivering scalable microservices and RESTful APIs using Python and TypeScript, with deep knowledge of relational and NoSQL databases.
+Experienced building web applications and IoT dashboards with Vue.js, Node.js/Express, and modern frontend tooling.
+Extensive infrastructure automation and CI/CD expertise on AWS, GCP, and OpenStack with Terraform and Ansible.
 B.Eng in Computer Engineering. Fluent in English and Portuguese.
 }
 
 \section{Professional Experience}
 
-\cventry{Jan 2023 - Present}{Senior Cloud \& Backend Engineer}{LuizaLabs (Magalu Cloud)}{Curitiba, Brazil}{}{
+\cventry{Dec 2025 - Present}{Senior Software Engineer}{Galileo.ai}{Remote}{}{
+\begin{itemize}
+\item Built end-to-end model pricing override system (Alembic, SQLAlchemy, FastAPI) with row-level security, TDD DAO layer, and multi-tenant isolation across API, Orbit, and Runners services
+\item Developed Mastra AI framework extension for OpenTelemetry v2, normalizing GenAI spans and enabling observability for agent, tool, and workflow traces
+\item Implemented custom integration features including model aliasing with legacy backward compatibility, encrypted HTTP headers, and API key authentication across the full stack
+\item Extended the Galileo Python SDK with OpenTelemetry span serialization for LLM, Agent, Tool, and Workflow span types, improving distributed tracing coverage
+\item Consolidated model cost calculation into a single source of truth, migrated pricing data to a cached CostTable, and added per-organization price override support in the scoring pipeline
+\end{itemize}
+}
+
+\cventry{Jan 2023 - Nov 2025}{Senior Cloud \& Backend Engineer}{LuizaLabs (Magalu Cloud)}{Curitiba, Brazil}{}{
 \begin{itemize}
 \item Led infrastructure automation with OpenStack (Glance, Nova, Cinder) and container technologies (Incus/LXD, KVM/QEMU) for virtual machine provisioning using Python, improving platform reliability for 50K+ instances
 \item Developed async backend services (asyncio, Pydantic, FastAPI) for VM lifecycle management, exposing RESTful APIs that reduced operational overhead 30\%
@@ -62,16 +72,18 @@ B.Eng in Computer Engineering. Fluent in English and Portuguese.
 }
 
 \section{Projects}
-\cvitem{ats-scanner}{Open-source CLI tool that analyzes resumes against job descriptions for ATS keyword optimization (GitHub)}
-\cvitem{IoT Gateway}{ESP32-based MQTT/SNMP telemetry gateway with web service backend and Elasticsearch analytics}
+\cvitem{ats-scanner}{TypeScript monorepo with CLI + web app for ATS resume optimization (Vite, Vitest, pnpm workspaces)}
+\cvitem{FishTankDashboard}{Full-stack IoT dashboard with Vue.js, Node.js/Express, MongoDB, and Chart.js for real-time sensor monitoring}
+\cvitem{blog}{Personal tech blog built with Astro, TypeScript, and TailwindCSS, deployed on Netlify}
 
 \section{Technical Skills}
-\cvitem{Languages}{Python, SQL, C/C++, Bash}
-\cvitem{Frameworks}{Django, FastAPI, Flask, SQLAlchemy, Pydantic, Celery, asyncio, pytest}
-\cvitem{Databases}{PostgreSQL, MySQL, Elasticsearch, SQLite, Redis, NoSQL}
+\cvitem{Languages}{Python, TypeScript, JavaScript, SQL, C/C++, Bash}
+\cvitem{Backend}{Django, FastAPI, Flask, Express.js, SQLAlchemy, Pydantic, Celery, asyncio, pytest}
+\cvitem{Frontend}{Vue.js, HTML, CSS, TailwindCSS, Astro, Vite, Webpack}
+\cvitem{Databases}{PostgreSQL, MySQL, MongoDB, Elasticsearch, SQLite, Redis}
 \cvitem{Cloud \& Virtualization}{OpenStack (Glance, Nova, Cinder), AWS (EC2, S3, Lambda), GCP, KVM/QEMU, Incus}
-\cvitem{DevOps \& IaC}{Terraform, Ansible, Docker, Kubernetes, GitLab CI/CD, GitHub Actions, ArgoCD, GitOps}
-\cvitem{Methodologies}{REST API Design, Microservices, Agile/Scrum, DevOps, Software Engineering}
+\cvitem{DevOps \& IaC}{Terraform, Ansible, Docker, Kubernetes, GitLab CI/CD, GitHub Actions, ArgoCD, OpenTelemetry}
+\cvitem{Methodologies}{REST API Design, Microservices, Agile/Scrum, DevOps, Full-Stack Development}
 
 \section{Education}
 \cventry{2015 - 2023}{B.Eng Computer Engineering}{Universidade Positivo}{Curitiba, Brazil}{}{}
