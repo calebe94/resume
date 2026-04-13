@@ -6,7 +6,7 @@
 \nopagenumbers
 
 \name{Edimar Calebe}{Castanho}
-\title{Senior Cloud \& Embedded Systems Engineer}
+\title{Senior Backend \& Cloud Infrastructure Engineer}
 \address{Curitiba, Brazil}{Open to relocation (Europe \& US)}
 \email{contato@calebe.dev.br}
 \phone[mobile]{+55~(41)~99827~1302}
@@ -19,61 +19,62 @@
 
 \section{Summary}
 \cvitem{}{
-Senior Engineer bridging embedded systems and cloud architecture. 7+ years designing IoT-to-cloud solutions with infrastructure automation (OpenStack, AWS, Terraform). Proven in performance optimization (40\% deployment reduction), CI/CD pipelines, and cross-platform development. Targeting senior cloud/embedded roles in Europe/US. Fluent: English \& Portuguese.
+Expert senior engineer with 7+ years of proven experience in backend engineering, cloud infrastructure, and IoT architecture.
+Proficient in delivering scalable microservices and RESTful APIs using Python, with deep knowledge of relational and NoSQL databases.
+Extensive experience in advanced infrastructure automation and CI/CD pipelines on public clouds (AWS, GCP) and OpenStack with Terraform and Ansible.
+Strong communication skills in cross-functional Agile/Scrum teams.
+B.Eng in Computer Engineering. Fluent in English and Portuguese.
 }
-
-\section{Technical Expertise}
-\cvitem{Cloud \& Virtualization}{\textbf{OpenStack} (Glance, Nova), \textbf{GCP} (Compute Engine/Cloud Storage/Cloud Functions), \textbf{AWS} (EC2/S3/Lambda), KVM/QEMU, Incus, Infrastructure as Code (IaC)}
-\cvitem{Automation \& DevOps}{\textbf{Terraform}, Ansible, \textbf{GitLab CI/CD}, GitHub Actions, ArgoCD, GitOps}
-\cvitem{Embedded \& IoT}{\textbf{ESP32}, FreeRTOS, TM4C, PIC, MQTT, SNMP, Linux (Debian/Yocto)}
-\cvitem{Languages}{Python, C/C++, SQL, Bash}
-\cvitem{Containers}{Docker, Kubernetes}
-\cvitem{Monitoring \& Testing}{Grafana, Kibana, OpenSearch, Sentry, Elasticsearch, pytest, sysbench, fio, iperf}
 
 \section{Professional Experience}
-\cventry{2023 -- Present}{Senior Cloud Engineer}{LuizaLabs (Magalu Cloud)}{}{}{
+
+\cventry{Jan 2023 - Present}{Senior Cloud \& Backend Engineer}{LuizaLabs (Magalu Cloud)}{Curitiba, Brazil}{}{
 \begin{itemize}
-\item \textbf{OpenStack Automation}: Led VM provisioning workflows using OpenStack + Incus, improving platform reliability for 50K+ instances
-\item \textbf{Python Tooling}: Developed async tools (asyncio/Pydantic) for VM lifecycle management, reducing operational overhead 30\%
-\item \textbf{Image Optimization}: Created automated Ubuntu/Windows Server imaging with Ansible, cutting deployment time 40\% through QCOW2 compression
-\item \textbf{Performance Engineering}: Designed Terraform modules for benchmarking environments (sysbench/fio/iperf) to validate infrastructure scaling
+\item Led infrastructure automation with OpenStack (Glance, Nova, Cinder) and container technologies (Incus/LXD, KVM/QEMU) for virtual machine provisioning using Python, improving platform reliability for 50K+ instances
+\item Developed async backend services (asyncio, Pydantic, FastAPI) for VM lifecycle management, exposing RESTful APIs that reduced operational overhead 30\%
+\item Created automated Ubuntu/Windows Server imaging with Ansible, cutting deployment time 40\% through QCOW2 compression
+\item Designed Terraform modules for performance engineering and benchmarking environments (sysbench/fio/iperf) deployed via GitLab CI/CD and GitHub Actions
+\item Maintained PostgreSQL and MySQL-backed microservices, collaborating with DevOps teams on code quality and infrastructure scaling
 \end{itemize}
 }
 
-\cventry{2020 -- 2023}{Embedded Systems Analyst}{T2I Group}{}{}{
+\cventry{Mar 2020 - Dec 2022}{Embedded \& Backend Systems Analyst}{T2I Group}{Curitiba, Brazil}{}{
 \begin{itemize}
-\item \textbf{IoT Architecture}: Designed vehicle detection system (MIP V2) processing 5k+ daily classifications using TM4C/ESP32 modules
-\item \textbf{Telemetry Systems}: Implemented SNMP protocol on ESP32 via custom LwIP fork for highway weather stations
-\item \textbf{Data Pipeline}: Built Flask/MQTT server aggregating real-time sensor data from 200+ roadside units
-\item \textbf{CI/CD Migration}: Consolidated 50+ repos to GitLab/GitHub Actions, reducing build times 30\%
+\item Architected IoT data pipeline using Flask with MQTT and FreeRTOS, aggregating real-time sensor data from 200+ roadside units
+\item Designed RESTful APIs for vehicle detection using ESP32 modules and TM4C microcontrollers, processing 5K+ daily classifications
+\item Consolidated 50+ repositories to GitLab/GitHub Actions CI/CD to reduce build times by 30\%
+\item Communicated technical requirements across hardware and software teams in Agile/Scrum sprints
 \end{itemize}
 }
 
-\section{Professional Experience (Continued)}
-\cventry{2019 -- 2020}{Embedded Systems Intern}{Alta Rail Technology}{}{}{
+\cventry{Feb 2019 - Feb 2020}{Backend Developer Intern}{Alta Rail Technology}{Colombo, Brazil}{}{
 \begin{itemize}
-\item Developed real-time train monitoring dashboard (Python/Flask) for locomotive operators
-\item Optimized C\# communication library, reducing satellite transmission costs 25\% via OSI header minimization
+\item Developed real-time train monitoring dashboard with Django, integrated with Elasticsearch for telemetry analytics
+\item Validated backend services with pytest and optimized satellite communication, reducing transmission costs 25\%
 \end{itemize}
 }
 
-\cventry{2017}{Embedded Systems Intern}{T2I Group}{}{}{
+\cventry{Jan 2017 - Dec 2017}{Embedded Systems Intern}{T2I Group}{Curitiba, Brazil}{}{
 \begin{itemize}
-\item Built OBD-II fleet tracking device using PIC18F + GSM/GPRS modules
-\item Created Raspberry Pi aquarium automation system with Vue.js dashboard
+\item Built OBD-II fleet tracking device (PIC18F, GSM/GPRS) with a web-based monitoring backend
+\item Created Raspberry Pi automation system with Vue.js dashboard and SQLite data store
 \end{itemize}
 }
 
-\section{Technical Proficiencies}
-\cvitem{Web/APIs}{FastAPI, Flask, Django, REST, Node.js, Vue.js}
-\cvitem{Cloud Tools}{AWS (Glue, CDK), GCP, Juju, Cloudbase-init}
-\cvitem{Embedded Platforms}{Arduino, ATmega328, FreeRTOS, VectorCast}
-\cvitem{Data Systems}{PostgreSQL, MySQL, SQLite, Snowflake, Elasticsearch}
-\cvitem{Networking}{GSM/GPRS, GPS/GNSS, BLE, OSI-layer optimization}
-\cvitem{Methodologies}{DevOps, Agile/Scrum, Microservices}
+\section{Projects}
+\cvitem{ats-scanner}{Open-source CLI tool that analyzes resumes against job descriptions for ATS keyword optimization (GitHub)}
+\cvitem{IoT Gateway}{ESP32-based MQTT/SNMP telemetry gateway with web service backend and Elasticsearch analytics}
+
+\section{Technical Skills}
+\cvitem{Languages}{Python, SQL, C/C++, Bash}
+\cvitem{Frameworks}{Django, FastAPI, Flask, SQLAlchemy, Pydantic, Celery, asyncio, pytest}
+\cvitem{Databases}{PostgreSQL, MySQL, Elasticsearch, SQLite, Redis, NoSQL}
+\cvitem{Cloud \& Virtualization}{OpenStack (Glance, Nova, Cinder), AWS (EC2, S3, Lambda), GCP, KVM/QEMU, Incus}
+\cvitem{DevOps \& IaC}{Terraform, Ansible, Docker, Kubernetes, GitLab CI/CD, GitHub Actions, ArgoCD, GitOps}
+\cvitem{Methodologies}{REST API Design, Microservices, Agile/Scrum, DevOps, Software Engineering}
 
 \section{Education}
-\cventry{2015--2023}{B.Eng Computer Engineering}{Universidade Positivo}{}{}{}
-\cventry{2011--2013}{Electromechanical Tech}{Instituto Federal do Paraná}{}{}{}
+\cventry{2015 - 2023}{B.Eng Computer Engineering}{Universidade Positivo}{Curitiba, Brazil}{}{}
+\cventry{2011 - 2013}{Electromechanical Technical Course}{Instituto Federal do Paran\'a}{Curitiba, Brazil}{}{}
 
 \end{document}
