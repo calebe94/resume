@@ -23,11 +23,36 @@
 
 \section{Resumo}
 \cvitem{}{
-Engenheiro de software sênior com forte experiência em Python, TypeScript e computação em nuvem. Atuo em desenvolvimento backend, infraestrutura cloud (AWS, GCP, Magalu Cloud) e desenvolvimento web full-stack com Vue.js, Node.js/Express e ferramentas modernas de frontend. Especialista em automação em nuvem, microsserviços escaláveis e aplicações web de alto desempenho.
+Engenheiro de software e cloud sênior com 7+ anos de experiência em engenharia backend, automação de infraestrutura cloud e desenvolvimento web full-stack.
+Desenvolveu microsserviços escaláveis e APIs RESTful com Python e TypeScript em plataformas de observabilidade GenAI (OpenTelemetry, tracing LLM), iniciativas de migração cloud (vSphere para AWS, runners efêmeros GitHub Enterprise, automação AMI com Packer) e pipelines de dados IoT.
+Proficiente em AWS, OpenStack e GCP com Terraform, Ansible e automação CI/CD (GitHub Actions, GitLab CI).
+Construiu aplicações web e dashboards com Vue.js, Node.js/Express e ferramentas modernas de frontend.
+Bacharelado em Engenharia da Computação. Fluente em inglês e português, espanhol conversacional.
 }
 
 \section{Experiência Profissional}
-\cventry{2023 -- Presente}{Desenvolvedor Sênior em Cloud}{LuizaLabs - Magalu Cloud}{Curitiba - PR}{}{
+\cventry{Mai 2026 -- Presente}{Engenheiro de Cloud Sênior}{Illumina}{Remoto}{}{
+\begin{itemize}
+\item Liderando migração vSphere para AWS para o time de Instrumentation Software, criando camada de abstração entre runners efêmeros auto-escaláveis do GitHub Enterprise e pipelines de teste E2E em Terraform com deployments multi-VPC, multi-instância e regras de rede complexas
+\item Arquitetou blueprint de infraestrutura AWS zero-trust incluindo segmentação de subnet, roles IAM de menor privilégio, instance profiles gerenciados via SSM e automação de AMIs com Packer (Rocky Linux 9), com projeção de custos de \textasciitilde\$566 no Q3 contra teto anual de \$15k
+\item Entregou pool de runners efêmeros em PoC com topologia single-ENI, tags de alocação de orçamento, agendamento de pre-warm e guardrails de governança completos (CODEOWNERS, gates CI com yamllint, workflows de smoke-test automatizados)
+\item Coordenou alinhamento de arquitetura cross-time com engenheiros de DevOps e Platform Solutions, validando roles IAM pré-configuradas, security groups e AMI IDs contra baselines canônicos de infraestrutura antes do provisionamento
+\item \textbf{Tecnologias:} Python, Terraform, Packer, AWS (EC2, IAM, VPC, SSM), GitHub Enterprise, GitHub Actions, YAML, Rocky Linux 9
+\end{itemize}
+}
+
+\cventry{Dez 2025 -- Mai 2026}{Engenheiro de Software Sênior}{Galileo.ai (adquirida pela Cisco)}{Remoto}{}{
+\begin{itemize}
+\item Construiu sistema de override de preços de modelos end-to-end (Alembic, SQLAlchemy, FastAPI) com row-level security, camada DAO em TDD e isolamento multi-tenant entre serviços de API, Orbit e Runners
+\item Desenvolveu extensão do framework Mastra AI para OpenTelemetry v2, normalizando spans GenAI e habilitando observabilidade para traces de agent, tool e workflow
+\item Implementou features de integração customizadas incluindo model aliasing com compatibilidade legada, headers HTTP criptografados e autenticação por API key em toda a stack
+\item Estendeu o SDK Python do Galileo com serialização de spans OpenTelemetry para tipos LLM, Agent, Tool e Workflow, melhorando cobertura de tracing distribuído
+\item Consolidou cálculo de custos de modelos em fonte única de verdade, migrou dados de pricing para CostTable cacheada e adicionou suporte a override de preços por organização no pipeline de scoring
+\item \textbf{Tecnologias:} Python (FastAPI, SQLAlchemy, Alembic, pytest), OpenTelemetry, observabilidade GenAI, SaaS multi-tenant
+\end{itemize}
+}
+
+\cventry{Jan 2023 -- Nov 2025}{Engenheiro Sênior de Cloud \& Backend}{LuizaLabs (Magalu Cloud)}{Curitiba - PR}{}{
 \begin{itemize}
 \item Desenvolvi ferramentas de automação em nuvem na tribo IAAS, otimizando a gestão de infraestrutura na Magalu Cloud.
 \item Criei frameworks em Python para microsserviços escaláveis usando FastAPI e Django.
@@ -61,13 +86,13 @@ Engenheiro de software sênior com forte experiência em Python, TypeScript e co
 \cvitem{Backend}{Django, FastAPI, Flask, Express.js, SQLAlchemy, Pydantic, Celery}
 \cvitem{Frontend}{Vue.js, HTML, CSS, TailwindCSS, Astro, Vite, Webpack}
 \cvitem{Bancos de Dados}{PostgreSQL, MySQL, MongoDB, Elasticsearch, SQLite, Redis}
-\cvitem{Plataformas de Nuvem}{AWS (Glue, Lambda, CloudFormation), GCP, Openstack, Magalu Cloud, Docker}
-\cvitem{DevOps}{CI/CD (GitLab, GitHub Actions, Jenkins), Docker, Ansible, Terraform, OpenTelemetry}
-\cvitem{Especialidades}{Desenvolvimento Full-Stack, Automação em Nuvem, Microsserviços Escaláveis, REST APIs, Agile/Scrum}
-\cvitem{Idiomas}{Português (Nativo), Inglês (Fluente)}
+\cvitem{Plataformas de Nuvem}{AWS (EC2, S3, Lambda, IAM, VPC, SSM), OpenStack (Glance, Nova, Cinder), GCP, Incus, KVM/QEMU, Packer}
+\cvitem{DevOps \& IaC}{Terraform, Ansible, Docker, Kubernetes, GitLab CI/CD, GitHub Actions, GitHub Enterprise, ArgoCD, OpenTelemetry}
+\cvitem{Especialidades}{Desenvolvimento Full-Stack, Automação em Nuvem, Microsserviços Escaláveis, REST APIs, Migração Cloud, Zero-Trust Security, DevOps, Agile/Scrum}
+\cvitem{Idiomas}{Português (Nativo), Inglês (Fluente), Espanhol (Conversacional)}
 
 \section{Formação}
-\cventry{2015 -- 2023}{Engenharia da Computação}{Universidade Positivo}{Curitiba}{}{}
+\cventry{2015 -- 2023}{Bacharelado em Engenharia da Computação}{Universidade Positivo}{Curitiba}{}{}
 \cventry{2011 -- 2013}{Curso Técnico em Eletromecânica}{Instituto Federal do Paran\'a - IFPR}{Curitiba}{}{}
 
 \end{document}

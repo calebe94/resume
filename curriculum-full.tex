@@ -23,17 +23,37 @@
 
 \section{Summary}
 \cvitem{}{
-Senior Software Engineer specialized in backend, cloud, and full-stack web development using \textbf{Python, TypeScript, FastAPI, Flask, Django, Vue.js, and Node.js}.
-Combines strong software engineering principles with infrastructure and DevOps expertise to deliver robust, scalable web applications and APIs.
-Experienced designing high-performance RESTful services, data pipelines, and automation tools for cloud environments (OpenStack, AWS).
-Proficient in asynchronous programming (asyncio), ORM integration (SQLAlchemy, Django ORM), API design, and CI/CD automation.
-Builds full-stack web applications and IoT dashboards with Vue.js, Express.js, MongoDB, and modern frontend tooling (Vite, TailwindCSS, Astro).
-Fluent in English and Portuguese, targeting senior engineering roles in Europe and the US.
+Senior software and cloud engineer with 7+ years of experience spanning backend engineering, cloud infrastructure automation, and full-stack web development.
+Delivered scalable microservices and RESTful APIs with Python and TypeScript across GenAI observability platforms (OpenTelemetry, LLM tracing), cloud migration initiatives (vSphere to AWS, GitHub Enterprise ephemeral runners, Packer AMI automation), and IoT data pipelines.
+Proficient in AWS, OpenStack, and GCP with Terraform, Ansible, and CI/CD automation (GitHub Actions, GitLab CI).
+Built web applications and dashboards with Vue.js, Node.js/Express, and modern frontend tooling (Vite, TailwindCSS, Astro).
+Bachelor of Engineering in Computer Engineering. Fluent in English and Portuguese, conversational Spanish.
 }
 
 \section{Professional Experience}
 
-\cventry{2023 -- Present}{Senior Cloud \& Backend Engineer}{LuizaLabs (Magalu Cloud)}{Curitiba, Brazil}{}{
+\cventry{May 2026 -- Present}{Senior Cloud Engineer}{Illumina}{Remote}{}{
+\begin{itemize}
+\item Leading vSphere-to-AWS cloud migration for the Instrumentation Software team, bridging GitHub Enterprise ephemeral auto-scaling runners with Terraform-driven E2E test environments spanning multi-VPC, multi-instance, and complex network rule deployments
+\item Architected zero-trust AWS infrastructure blueprint including subnet segmentation, least-privilege IAM roles, SSM-managed instance profiles, and Packer-based AMI automation (Rocky Linux 9), with cost modeling projecting \textasciitilde\$566 Q3 spend against a \$15k annual cap
+\item Delivered proof-of-concept ephemeral runner pool with single-ENI topology, budget allocation tagging, pre-warm scheduling, and full governance guardrails (CODEOWNERS review enforcement, yamllint CI gates, automated smoke-test workflows)
+\item Coordinated cross-team architecture alignment with DevOps and Platform Solutions engineers, validating IAM pre-wired roles, security groups, and AMI IDs against canonical infrastructure baselines before provisioning
+\item \textbf{Technologies:} Python, Terraform, Packer, AWS (EC2, IAM, VPC, SSM), GitHub Enterprise, GitHub Actions, YAML, Rocky Linux 9
+\end{itemize}
+}
+
+\cventry{Dec 2025 -- May 2026}{Senior Software Engineer}{Galileo.ai (acquired by Cisco)}{Remote}{}{
+\begin{itemize}
+\item Built end-to-end model pricing override system (Alembic, SQLAlchemy, FastAPI) with row-level security, TDD DAO layer, and multi-tenant isolation across API, Orbit, and Runners services
+\item Developed Mastra AI framework extension for OpenTelemetry v2, normalizing GenAI spans and enabling observability for agent, tool, and workflow traces
+\item Implemented custom integration features including model aliasing with legacy backward compatibility, encrypted HTTP headers, and API key authentication across the full stack
+\item Extended the Galileo Python SDK with OpenTelemetry span serialization for LLM, Agent, Tool, and Workflow span types, improving distributed tracing coverage
+\item Consolidated model cost calculation into a single source of truth, migrated pricing data to a cached CostTable, and added per-organization price override support in the scoring pipeline
+\item \textbf{Technologies:} Python (FastAPI, SQLAlchemy, Alembic, pytest), OpenTelemetry, GenAI observability, multi-tenant SaaS
+\end{itemize}
+}
+
+\cventry{Jan 2023 -- Nov 2025}{Senior Cloud \& Backend Engineer}{LuizaLabs (Magalu Cloud)}{Curitiba, Brazil}{}{
 \begin{itemize}
 \item Designed and implemented Python web services using \textbf{FastAPI} and \textbf{Flask} to automate VM lifecycle management (provisioning, snapshotting, backups, image releases) in Magalu Cloud’s IaaS platform.
 \item Built RESTful APIs and internal developer tools leveraging \textbf{asyncio}, \textbf{Pydantic}, and \textbf{SQLAlchemy} to manage compute, storage, and network resources.
@@ -81,16 +101,16 @@ Fluent in English and Portuguese, targeting senior engineering roles in Europe a
 \cvitem{Backend Frameworks}{FastAPI, Flask, Django, Express.js, SQLAlchemy, Pydantic, Celery}
 \cvitem{Frontend}{Vue.js, HTML, CSS, TailwindCSS, Jinja2, Astro, Vite, Webpack}
 \cvitem{Databases}{PostgreSQL, MySQL, MongoDB, SQLite, Redis, Elasticsearch}
-\cvitem{Cloud \& Virtualization}{OpenStack (Glance, Nova, Cinder, Neutron), AWS (EC2, S3, Lambda), Incus (LXD), KVM/QEMU}
+\cvitem{Cloud \& Virtualization}{AWS (EC2, S3, Lambda, IAM, VPC, SSM), OpenStack (Glance, Nova, Cinder, Neutron), GCP, Incus (LXD), KVM/QEMU, Packer}
 \cvitem{Containers \& Orchestration}{Docker, Kubernetes, Docker Compose}
 \cvitem{IaC \& Configuration}{Terraform, Ansible, Juju}
-\cvitem{CI/CD \& Automation}{GitLab CI/CD, GitHub Actions, Jenkins, ArgoCD, OpenTelemetry}
+\cvitem{CI/CD \& Automation}{GitLab CI/CD, GitHub Actions, GitHub Enterprise, Jenkins, ArgoCD, OpenTelemetry}
 \cvitem{Testing \& Quality}{pytest, Vitest, unittest, coverage, sysbench, fio, iperf}
-\cvitem{Methodologies}{REST API Design, Microservices, Full-Stack Development, Asynchronous Programming, Cloud Automation, DevOps, Agile/Scrum}
-\cvitem{Languages}{Portuguese (Native), English (Fluent)}
+\cvitem{Methodologies}{REST API Design, Microservices, Full-Stack Development, Asynchronous Programming, Cloud Migration, Zero-Trust Security, Cloud Automation, DevOps, Agile/Scrum}
+\cvitem{Spoken Languages}{Portuguese (Native), English (Fluent), Spanish (Conversational)}
 
 \section{Education}
-\cventry{2015 -- 2023}{Computer Engineering}{Universidade Positivo}{Curitiba, Brazil}{}{}
+\cventry{2015 -- 2023}{Bachelor of Engineering in Computer Engineering}{Universidade Positivo}{Curitiba, Brazil}{}{}
 \cventry{2011 -- 2013}{Electromechanical Technical Course}{Instituto Federal do Paran\'a (IFPR)}{Curitiba, Brazil}{}{}
 
 \end{document}
