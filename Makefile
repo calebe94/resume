@@ -4,7 +4,7 @@
 # @file
 # @version 0.1
 
-TEX_FILES := curriculum-pt.tex curriculum.tex curriculum-full.tex
+TEX_FILES := curriculum-pt.tex curriculum.tex curriculum-full.tex curriculum-ai-infra.tex curriculum-us-contractor.tex
 
 all: pdf
 
@@ -17,7 +17,13 @@ en:
 full:
 	pdflatex curriculum-full.tex
 
-pdf: pt en full
+aiinfra:
+	pdflatex curriculum-ai-infra.tex
+
+uscontractor:
+	pdflatex curriculum-us-contractor.tex
+
+pdf: pt en full aiinfra uscontractor
 
 lint:
 	chktex $(TEX_FILES)

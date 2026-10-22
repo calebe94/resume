@@ -1,0 +1,111 @@
+\documentclass[11pt,letterpaper]{article}
+
+% ---------------------------------------------------------------------------
+% ATS-SAFE VARIANT — US remote contractor (B2B) applications.
+% Base: curriculum.tex (EN concise). Same jobs, same dates, same facts.
+% Single column, linear flow, no tables, no icons, no colour, black text.
+% ---------------------------------------------------------------------------
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[margin=0.7in]{geometry}
+\usepackage[hidelinks]{hyperref}
+
+% Make the PDF text layer extractable (copy/paste and ATS parsing)
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+% No hyphenation: split words break ATS keyword matching
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\sloppy
+
+\newcommand{\resumesection}[1]{%
+  \vspace{8pt}{\large\bfseries #1}\par\vspace{2pt}\hrule\vspace{4pt}}
+\newcommand{\job}[4]{%
+  \vspace{4pt}\textbf{#1} | #2 | #3 \hfill #4\par}
+\newenvironment{bullets}
+  {\begin{itemize}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}\setlength{\topsep}{2pt}}
+  {\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries Edimar Calebe Castanho}\par\vspace{3pt}
+Senior Software Engineer - Backend \& Cloud Systems | Python, FastAPI, AWS, Terraform | GenAI Observability \& OpenTelemetry\par\vspace{3pt}
+Curitiba, Brazil (UTC-3) | Available for remote B2B contract work with US teams\par\vspace{3pt}
+contato@calebe.dev.br | +55 (41) 99827 1302 | \href{https://www.linkedin.com/in/calebe94}{linkedin.com/in/calebe94} | \href{https://github.com/calebe94}{github.com/calebe94} | \href{https://blog.calebe.dev.br/}{blog.calebe.dev.br}
+\end{center}
+
+\resumesection{Summary}
+Senior software and cloud engineer with 7+ years of experience in backend engineering and cloud infrastructure automation, building with Python, FastAPI, AWS, and Terraform.
+Currently leading a zero-trust vSphere-to-AWS migration with Terraform, Packer, and GitHub Enterprise ephemeral runners, with cost modeled against a \$15k annual budget cap.
+Previously built GenAI observability and multi-tenant model pricing features at Galileo.ai (acquired by Cisco), including OpenTelemetry v2 span normalization for LLM, agent, tool, and workflow traces.
+Developed asynchronous VM lifecycle services for an OpenStack IaaS platform serving 50K+ instances.
+Directs AI coding agents and reviews their output for correctness, security, and test coverage before merge.
+Fluent in English and Portuguese, conversational Spanish.
+
+\resumesection{Professional Experience}
+
+\job{Senior Cloud Engineer}{Illumina}{Remote}{May 2026 - Present}
+\begin{bullets}
+\item Leading zero-trust vSphere-to-AWS migration for the Instrumentation Software team, provisioning GitHub Enterprise ephemeral auto-scaling runners and Terraform-driven E2E test environments (multi-VPC, multi-instance, complex network rules) within a \$15k annual budget cap
+\item Architected AWS infrastructure blueprint with subnet segmentation, least-privilege IAM roles, SSM-managed instance profiles, and Packer-based AMI automation (Rocky Linux 9), with cost modeling projecting \textasciitilde\$566 Q3 spend
+\item Delivered proof-of-concept ephemeral runner pool with single-ENI topology, budget allocation tagging, pre-warm scheduling, and governance guardrails (CODEOWNERS review enforcement, yamllint CI gates, automated smoke-test workflows)
+\item Coordinated cross-team architecture alignment with DevOps and Platform Solutions engineers, validating pre-wired IAM roles, security groups, and AMI IDs against canonical infrastructure baselines before provisioning
+\item Directed AI agents to scaffold and iterate on Terraform and AWS infrastructure, reviewing generated code for correctness and security before merge
+\end{bullets}
+
+\job{Senior Software Engineer}{Galileo.ai (acquired by Cisco)}{Remote}{Dec 2025 - May 2026}
+\begin{bullets}
+\item Built end-to-end multi-tenant model pricing override system with row-level security (FastAPI, SQLAlchemy, Alembic), backed by a test-driven DAO layer and enforcing tenant isolation across three platform services
+\item Developed Mastra AI framework extension for OpenTelemetry v2, normalizing GenAI spans to enable observability of agent, tool, and workflow traces
+\item Extended the Galileo Python SDK with OpenTelemetry span serialization for LLM, agent, tool, and workflow span types, expanding distributed tracing coverage
+\item Consolidated model cost calculation into a single source of truth, migrating pricing data to a cached cost table and adding per-organization price overrides to the scoring pipeline
+\item Implemented custom integration features across the full stack, including model aliasing with legacy backward compatibility, encrypted HTTP headers, and API key authentication
+\item Directed AI coding agents to implement features across the stack, reviewing their output for correctness, architecture, and test coverage before merge
+\end{bullets}
+
+\job{Senior Cloud \& Backend Engineer}{LuizaLabs (Magalu Cloud)}{Curitiba, Brazil}{Jan 2023 - Nov 2025}
+\begin{bullets}
+\item Developed asynchronous backend services (asyncio, FastAPI, Pydantic) exposing RESTful APIs to automate OpenStack VM lifecycle management, reducing operational overhead 30\%
+\item Led Python infrastructure automation for VM provisioning on OpenStack (Glance, Nova, Cinder), Incus/LXD, and KVM/QEMU, improving platform reliability across 50K+ instances
+\item Automated Ubuntu and Windows Server image builds with Ansible and QCOW2 compression, cutting deployment time 40\%
+\item Designed Terraform modules for performance engineering and benchmarking environments (sysbench, fio, iperf), deployed via GitLab CI/CD and GitHub Actions
+\item Maintained PostgreSQL- and MySQL-backed microservices, collaborating with DevOps teams on code quality and infrastructure scaling
+\end{bullets}
+
+\job{Embedded \& Backend Systems Analyst}{T2I Group}{Curitiba, Brazil}{Mar 2020 - Dec 2022}
+\begin{bullets}
+\item Architected IoT data pipeline using Flask, MQTT, and FreeRTOS, aggregating real-time sensor data from 200+ roadside units
+\item Designed RESTful APIs for vehicle detection on ESP32 modules and TM4C microcontrollers, processing 5K+ daily classifications
+\item Consolidated 50+ repositories onto GitLab CI/CD and GitHub Actions pipelines, reducing build times 30\%
+\end{bullets}
+
+\job{Backend Developer Intern}{Alta Rail Technology}{Colombo, Brazil}{Feb 2019 - Feb 2020}
+\begin{bullets}
+\item Developed real-time train monitoring dashboard with Django and Elasticsearch for telemetry analytics, and optimized satellite communication, reducing transmission costs 25\%
+\end{bullets}
+
+\job{Embedded Systems Intern}{T2I Group}{Curitiba, Brazil}{Jan 2017 - Dec 2017}
+\begin{bullets}
+\item Built OBD-II fleet tracking device (PIC18F, GSM/GPRS) with a web-based monitoring backend and Raspberry Pi automation system
+\end{bullets}
+
+\resumesection{Technical Skills}
+\textbf{Languages:} Python, TypeScript, JavaScript, SQL, C/C++, Bash\par\vspace{2pt}
+\textbf{Backend:} FastAPI, Django, Flask, Express.js, SQLAlchemy, Alembic, Pydantic, Celery, asyncio, pytest, PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, REST API Design, Microservices\par\vspace{2pt}
+\textbf{Cloud \& DevOps:} AWS (EC2, S3, Lambda, IAM, VPC, SSM), OpenStack (Glance, Nova, Cinder, Neutron), GCP, Terraform, Packer, Ansible, Docker, Kubernetes, KVM/QEMU, Incus/LXD, GitHub Actions, GitHub Enterprise, GitLab CI/CD, ArgoCD, Linux, Zero-Trust Security, Cloud Migration\par\vspace{2pt}
+\textbf{AI \& Observability:} OpenTelemetry v2, Distributed Tracing, GenAI and LLM Observability (LLM, Agent, Tool, Workflow spans), Mastra AI, Model Cost and Pricing Systems, AI Coding Agent Orchestration and Code Review\par\vspace{2pt}
+\textbf{Spoken Languages:} Portuguese (Native), English (Fluent), Spanish (Conversational)
+
+\resumesection{Education}
+\textbf{Bachelor of Engineering in Computer Engineering} | Universidade Positivo | Curitiba, Brazil \hfill 2015 - 2023\par\vspace{2pt}
+\textbf{Electromechanical Technical Course} | Instituto Federal do Paran\'a | Curitiba, Brazil \hfill 2011 - 2013\par
+
+\end{document}

@@ -33,62 +33,69 @@ Bacharelado em Engenharia da Computação. Fluente em inglês e português, espa
 \section{Experiência Profissional}
 \cventry{Mai 2026 -- Presente}{Engenheiro de Cloud Sênior}{Illumina}{Remoto}{}{
 \begin{itemize}
-\item Liderando migração vSphere para AWS para o time de Instrumentation Software, criando camada de abstração entre runners efêmeros auto-escaláveis do GitHub Enterprise e pipelines de teste E2E em Terraform com deployments multi-VPC, multi-instância e regras de rede complexas
-\item Arquitetou blueprint de infraestrutura AWS zero-trust incluindo segmentação de subnet, roles IAM de menor privilégio, instance profiles gerenciados via SSM e automação de AMIs com Packer (Rocky Linux 9), com projeção de custos de \textasciitilde\$566 no Q3 contra teto anual de \$15k
-\item Entregou pool de runners efêmeros em PoC com topologia single-ENI, tags de alocação de orçamento, agendamento de pre-warm e guardrails de governança completos (CODEOWNERS, gates CI com yamllint, workflows de smoke-test automatizados)
+\item Liderando migração zero-trust de vSphere para AWS no time de Instrumentation Software, provisionando runners efêmeros auto-escaláveis do GitHub Enterprise e ambientes de teste E2E em Terraform (multi-VPC, multi-instância, regras de rede complexas) dentro de um teto orçamentário anual de \$15k
+\item Arquitetou blueprint de infraestrutura AWS com segmentação de subnet, roles IAM de menor privilégio, instance profiles gerenciados via SSM e automação de AMIs com Packer (Rocky Linux 9), com modelagem de custos projetando \textasciitilde\$566 no Q3
+\item Entregou pool de runners efêmeros em PoC com topologia single-ENI, tags de alocação de orçamento, agendamento de pre-warm e guardrails de governança (CODEOWNERS, gates CI com yamllint, workflows de smoke-test automatizados)
 \item Coordenou alinhamento de arquitetura cross-time com engenheiros de DevOps e Platform Solutions, validando roles IAM pré-configuradas, security groups e AMI IDs contra baselines canônicos de infraestrutura antes do provisionamento
+\item Dirigiu agentes de IA para scaffold e iteração de infraestrutura Terraform/AWS, revisando o código gerado quanto a correção, postura de segurança e aderência aos baselines canônicos antes do merge
 \item \textbf{Tecnologias:} Python, Terraform, Packer, AWS (EC2, IAM, VPC, SSM), GitHub Enterprise, GitHub Actions, YAML, Rocky Linux 9
 \end{itemize}
 }
 
 \cventry{Dez 2025 -- Mai 2026}{Engenheiro de Software Sênior}{Galileo.ai (adquirida pela Cisco)}{Remoto}{}{
 \begin{itemize}
-\item Construiu sistema de override de preços de modelos end-to-end (Alembic, SQLAlchemy, FastAPI) com row-level security, camada DAO em TDD e isolamento multi-tenant entre serviços de API, Orbit e Runners
-\item Desenvolveu extensão do framework Mastra AI para OpenTelemetry v2, normalizando spans GenAI e habilitando observabilidade para traces de agent, tool e workflow
-\item Implementou features de integração customizadas incluindo model aliasing com compatibilidade legada, headers HTTP criptografados e autenticação por API key em toda a stack
-\item Estendeu o SDK Python do Galileo com serialização de spans OpenTelemetry para tipos LLM, Agent, Tool e Workflow, melhorando cobertura de tracing distribuído
-\item Consolidou cálculo de custos de modelos em fonte única de verdade, migrou dados de pricing para CostTable cacheada e adicionou suporte a override de preços por organização no pipeline de scoring
+\item Construiu sistema end-to-end de override de preços de modelos multi-tenant com row-level security (FastAPI, SQLAlchemy, Alembic), apoiado em camada DAO desenvolvida com TDD e garantindo isolamento entre tenants em três serviços da plataforma
+\item Desenvolveu extensão do framework Mastra AI para OpenTelemetry v2, normalizando spans GenAI para habilitar observabilidade de traces de agent, tool e workflow
+\item Estendeu o SDK Python do Galileo com serialização de spans OpenTelemetry para tipos LLM, Agent, Tool e Workflow, ampliando a cobertura de tracing distribuído
+\item Consolidou o cálculo de custos de modelos em fonte única de verdade, migrando dados de pricing para tabela de custos cacheada e adicionando override de preços por organização ao pipeline de scoring
+\item Implementou features de integração customizadas em toda a stack, incluindo model aliasing com compatibilidade legada, headers HTTP criptografados e autenticação por API key
+\item Dirigiu agentes de IA de codificação para implementar features e refatorações em toda a stack, revisando a saída quanto a correção, arquitetura e cobertura de testes antes do merge
 \item \textbf{Tecnologias:} Python (FastAPI, SQLAlchemy, Alembic, pytest), OpenTelemetry, observabilidade GenAI, SaaS multi-tenant
 \end{itemize}
 }
 
 \cventry{Jan 2023 -- Nov 2025}{Engenheiro Sênior de Cloud \& Backend}{LuizaLabs (Magalu Cloud)}{Curitiba - PR}{}{
 \begin{itemize}
-\item Desenvolvi ferramentas de automação em nuvem na tribo IAAS, otimizando a gestão de infraestrutura na Magalu Cloud.
-\item Criei frameworks em Python para microsserviços escaláveis usando FastAPI e Django.
-\item Melhorei o desempenho e a confiabilidade da infraestrutura em nuvem utilizando Openstack, Juju e Ansible.
-\item Integrei serviços da AWS com ferramentas internas para otimizar pipelines de processamento de dados.
-\item Tecnologias: Python, FastAPI, Snowflake, RabbitMQ, Openstack, AWS, Docker, GitLab CI/CD.
+\item Desenvolveu serviços backend assíncronos (asyncio, FastAPI, Pydantic) com APIs RESTful para automatizar o ciclo de vida de VMs OpenStack na tribo IaaS da Magalu Cloud, reduzindo o overhead operacional em 30\%
+\item Liderou automação de infraestrutura em Python para provisionamento de VMs com OpenStack (Glance, Nova, Cinder), Juju, Incus/LXD e KVM/QEMU, aumentando o desempenho e a confiabilidade da plataforma para mais de 50 mil instâncias
+\item Automatizou a geração de imagens Ubuntu e Windows Server com Ansible e compressão QCOW2, reduzindo o tempo de deploy em 40\%
+\item Projetou módulos Terraform para ambientes de engenharia de performance e benchmarking (sysbench, fio, iperf), implantados via GitLab CI/CD e GitHub Actions
+\item Criou frameworks em Python para microsserviços escaláveis com FastAPI e Django (PostgreSQL, MySQL) e integrou serviços da AWS a ferramentas internas para otimizar pipelines de processamento de dados
+\item \textbf{Tecnologias:} Python (FastAPI, Django, Pydantic, asyncio), PostgreSQL, MySQL, Snowflake, RabbitMQ, OpenStack, Juju, Ansible, Terraform, AWS, Docker, GitLab CI/CD, GitHub Actions
 \end{itemize}
 }
 
-\cventry{2020 -- 2023}{Analista de Cloud e Sistemas Embarcados}{T2I Group}{Curitiba - PR}{}{
+\cventry{Mar 2020 -- Dez 2022}{Analista de Sistemas Embarcados e Backend}{T2I Group}{Curitiba - PR}{}{
 \begin{itemize}
-\item Migrei sistemas embarcados legados para soluções modernas baseadas em Python integradas à nuvem.
-\item Automatizei fluxos de trabalho ETL e otimizei pipelines de dados usando AWS Glue e Lambda.
-\item Implementei aplicações conteinerizadas para implantação em nuvem com Docker e Kubernetes.
-\item Desenvolvi arquiteturas serverless e integrei Python com diversos serviços em nuvem para automação de ponta a ponta.
-\item Tecnologias: Python, AWS Glue, Lambda, Docker, Kubernetes, FreeRTOS, C++.
+\item Arquitetou pipeline de dados IoT com Flask, MQTT e FreeRTOS, agregando dados de sensores em tempo real de mais de 200 unidades de monitoramento rodoviário
+\item Projetou APIs RESTful para detecção de veículos com módulos ESP32 e microcontroladores TM4C, processando mais de 5 mil classificações diárias
+\item Consolidou mais de 50 repositórios em pipelines de CI/CD com GitLab e GitHub Actions, reduzindo o tempo de build em 30\%
+\item Migrou sistemas embarcados legados para soluções em Python integradas à nuvem, com fluxos ETL serverless em AWS Glue e Lambda e aplicações conteinerizadas com Docker e Kubernetes
+\item \textbf{Tecnologias:} Python (Flask), MQTT, AWS Glue, Lambda, Docker, Kubernetes, GitLab CI/CD, GitHub Actions, FreeRTOS, C/C++, ESP32, TM4C
 \end{itemize}
 }
 
-\cventry{2019 -- 2020}{Estagiário em Sistemas Embarcados}{Alta Rail Technology - ART}{Colombo - PR}{}{
+\cventry{Fev 2019 -- Fev 2020}{Estagiário de Desenvolvimento Backend}{Alta Rail Technology}{Colombo - PR}{}{
 \begin{itemize}
-\item Automatizei testes para sistemas embarcados com Python, aumentando a eficiência da validação.
-\item Integrei soluções em nuvem aos fluxos de trabalho existentes, utilizando AWS para escalabilidade.
-\item Desenvolvi utilitários para interação com bancos de dados e integração hardware-software.
-\item Tecnologias: Python, SQLite, AWS, C++, Git.
+\item Desenvolveu dashboard de monitoramento de trens em tempo real com Django e Elasticsearch para análise de telemetria, e otimizou a comunicação via satélite, reduzindo custos de transmissão em 25\%
+\item Automatizou testes de sistemas embarcados com Python, integrou soluções AWS aos fluxos existentes e desenvolveu utilitários de banco de dados e integração hardware-software
+\item \textbf{Tecnologias:} Python, Django, Elasticsearch, SQLite, AWS, C++, Git
+\end{itemize}
+}
+
+\cventry{Jan 2017 -- Dez 2017}{Estagiário em Sistemas Embarcados}{T2I Group}{Curitiba - PR}{}{
+\begin{itemize}
+\item Construiu dispositivo de rastreamento de frota OBD-II (PIC18F, GSM/GPRS) com backend web de monitoramento e sistema de automação com Raspberry Pi
 \end{itemize}
 }
 
 \section{Habilidades Técnicas}
 \cvitem{Linguagens}{Python, TypeScript, JavaScript, SQL, C++, Shell Script}
-\cvitem{Backend}{Django, FastAPI, Flask, Express.js, SQLAlchemy, Pydantic, Celery}
+\cvitem{Backend}{FastAPI, Django, Flask, Express.js, SQLAlchemy, Pydantic, Celery, PostgreSQL, MySQL, MongoDB, Elasticsearch, SQLite, Redis, REST APIs, Microsserviços Escaláveis}
 \cvitem{Frontend}{Vue.js, HTML, CSS, TailwindCSS, Astro, Vite, Webpack}
-\cvitem{Bancos de Dados}{PostgreSQL, MySQL, MongoDB, Elasticsearch, SQLite, Redis}
-\cvitem{Plataformas de Nuvem}{AWS (EC2, S3, Lambda, IAM, VPC, SSM), OpenStack (Glance, Nova, Cinder), GCP, Incus, KVM/QEMU, Packer}
-\cvitem{DevOps \& IaC}{Terraform, Ansible, Docker, Kubernetes, GitLab CI/CD, GitHub Actions, GitHub Enterprise, ArgoCD, OpenTelemetry}
-\cvitem{Especialidades}{Desenvolvimento Full-Stack, Automação em Nuvem, Microsserviços Escaláveis, REST APIs, Migração Cloud, Zero-Trust Security, DevOps, Agile/Scrum}
+\cvitem{Cloud \& DevOps}{AWS (EC2, S3, Lambda, IAM, VPC, SSM), OpenStack (Glance, Nova, Cinder), GCP, Incus, KVM/QEMU, Packer, Terraform, Ansible, Docker, Kubernetes, GitLab CI/CD, GitHub Actions, GitHub Enterprise, ArgoCD, Automação em Nuvem, Migração Cloud, Zero-Trust Security}
+\cvitem{IA \& Observabilidade}{OpenTelemetry v2, Tracing Distribuído, Observabilidade GenAI e LLM, Orquestração e Revisão de Código de Agentes de IA}
+\cvitem{Práticas}{Desenvolvimento Full-Stack, DevOps, Agile/Scrum}
 \cvitem{Idiomas}{Português (Nativo), Inglês (Fluente), Espanhol (Conversacional)}
 
 \section{Formação}

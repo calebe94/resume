@@ -2,7 +2,7 @@
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.78]{geometry}
+\usepackage[scale=0.85]{geometry}
 \nopagenumbers
 
 \name{Edimar Calebe}{Castanho}
@@ -30,64 +30,62 @@ Bachelor of Engineering in Computer Engineering. Fluent in English and Portugues
 
 \cventry{May 2026 - Present}{Senior Cloud Engineer}{Illumina}{Remote}{}{
 \begin{itemize}
-\item Leading vSphere-to-AWS cloud migration for the Instrumentation Software team, bridging GitHub Enterprise ephemeral auto-scaling runners with Terraform-driven E2E test environments spanning multi-VPC, multi-instance, and complex network rule deployments
-\item Architected zero-trust AWS infrastructure blueprint including subnet segmentation, least-privilege IAM roles, SSM-managed instance profiles, and Packer-based AMI automation (Rocky Linux 9), with cost modeling projecting \textasciitilde\$566 Q3 spend against a \$15k annual cap
-\item Delivered proof-of-concept ephemeral runner pool with single-ENI topology, budget allocation tagging, pre-warm scheduling, and full governance guardrails (CODEOWNERS review enforcement, yamllint CI gates, automated smoke-test workflows)
-\item Coordinated cross-team architecture alignment with DevOps and Platform Solutions engineers, validating IAM pre-wired roles, security groups, and AMI IDs against canonical infrastructure baselines before provisioning
+\item Leading zero-trust vSphere-to-AWS migration for the Instrumentation Software team, provisioning GitHub Enterprise ephemeral auto-scaling runners and Terraform-driven E2E test environments (multi-VPC, multi-instance, complex network rules) within a \$15k annual budget cap
+\item Architected AWS infrastructure blueprint with subnet segmentation, least-privilege IAM roles, SSM-managed instance profiles, and Packer-based AMI automation (Rocky Linux 9), with cost modeling projecting \textasciitilde\$566 Q3 spend
+\item Delivered proof-of-concept ephemeral runner pool with single-ENI topology, budget allocation tagging, pre-warm scheduling, and governance guardrails (CODEOWNERS review enforcement, yamllint CI gates, automated smoke-test workflows)
+\item Coordinated cross-team architecture alignment with DevOps and Platform Solutions engineers, validating pre-wired IAM roles, security groups, and AMI IDs against canonical infrastructure baselines before provisioning
+\item Directed AI agents to scaffold and iterate on Terraform/AWS infrastructure, reviewing generated code for correctness and security before merge
 \end{itemize}
 }
 
 \cventry{Dec 2025 - May 2026}{Senior Software Engineer}{Galileo.ai (acquired by Cisco)}{Remote}{}{
 \begin{itemize}
-\item Built end-to-end model pricing override system (Alembic, SQLAlchemy, FastAPI) with row-level security, TDD DAO layer, and multi-tenant isolation across API, Orbit, and Runners services
-\item Developed Mastra AI framework extension for OpenTelemetry v2, normalizing GenAI spans and enabling observability for agent, tool, and workflow traces
-\item Implemented custom integration features including model aliasing with legacy backward compatibility, encrypted HTTP headers, and API key authentication across the full stack
-\item Extended the Galileo Python SDK with OpenTelemetry span serialization for LLM, Agent, Tool, and Workflow span types, improving distributed tracing coverage
-\item Consolidated model cost calculation into a single source of truth, migrated pricing data to a cached CostTable, and added per-organization price override support in the scoring pipeline
+\item Built end-to-end multi-tenant model pricing override system with row-level security (FastAPI, SQLAlchemy, Alembic), backed by a test-driven DAO layer and enforcing tenant isolation across three platform services
+\item Developed Mastra AI framework extension for OpenTelemetry v2, normalizing GenAI spans to enable observability of agent, tool, and workflow traces
+\item Extended the Galileo Python SDK with OpenTelemetry span serialization for LLM, agent, tool, and workflow span types, expanding distributed tracing coverage
+\item Consolidated model cost calculation into a single source of truth, migrating pricing data to a cached cost table and adding per-organization price overrides to the scoring pipeline
+\item Implemented custom integration features across the full stack, including model aliasing with legacy backward compatibility, encrypted HTTP headers, and API key authentication
+\item Directed AI coding agents to implement features across the stack, reviewing their output for correctness, architecture, and test coverage before merge
 \end{itemize}
 }
 
 \cventry{Jan 2023 - Nov 2025}{Senior Cloud \& Backend Engineer}{LuizaLabs (Magalu Cloud)}{Curitiba, Brazil}{}{
 \begin{itemize}
-\item Led infrastructure automation with OpenStack (Glance, Nova, Cinder) and container technologies (Incus/LXD, KVM/QEMU) for virtual machine provisioning using Python, improving platform reliability for 50K+ instances
-\item Developed async backend services (asyncio, Pydantic, FastAPI) for VM lifecycle management, exposing RESTful APIs that reduced operational overhead 30\%
-\item Created automated Ubuntu/Windows Server imaging with Ansible, cutting deployment time 40\% through QCOW2 compression
-\item Designed Terraform modules for performance engineering and benchmarking environments (sysbench/fio/iperf) deployed via GitLab CI/CD and GitHub Actions
-\item Maintained PostgreSQL and MySQL-backed microservices, collaborating with DevOps teams on code quality and infrastructure scaling
+\item Developed asynchronous backend services (asyncio, FastAPI, Pydantic) exposing RESTful APIs to automate OpenStack VM lifecycle management, reducing operational overhead 30\%
+\item Led Python infrastructure automation for VM provisioning on OpenStack (Glance, Nova, Cinder), Incus/LXD, and KVM/QEMU, improving platform reliability across 50K+ instances
+\item Automated Ubuntu and Windows Server image builds with Ansible and QCOW2 compression, cutting deployment time 40\%
+\item Designed Terraform modules for performance engineering and benchmarking environments (sysbench, fio, iperf), deployed via GitLab CI/CD and GitHub Actions
+\item Maintained PostgreSQL- and MySQL-backed microservices, collaborating with DevOps teams on code quality and infrastructure scaling
 \end{itemize}
 }
 
 \cventry{Mar 2020 - Dec 2022}{Embedded \& Backend Systems Analyst}{T2I Group}{Curitiba, Brazil}{}{
 \begin{itemize}
-\item Architected IoT data pipeline using Flask with MQTT and FreeRTOS, aggregating real-time sensor data from 200+ roadside units
-\item Designed RESTful APIs for vehicle detection using ESP32 modules and TM4C microcontrollers, processing 5K+ daily classifications
-\item Consolidated 50+ repositories to GitLab/GitHub Actions CI/CD to reduce build times by 30\%
-\item Communicated technical requirements across hardware and software teams in Agile/Scrum sprints
+\item Architected IoT data pipeline using Flask, MQTT, and FreeRTOS, aggregating real-time sensor data from 200+ roadside units
+\item Designed RESTful APIs for vehicle detection on ESP32 modules and TM4C microcontrollers, processing 5K+ daily classifications
+\item Consolidated 50+ repositories onto GitLab CI/CD and GitHub Actions pipelines, reducing build times 30\%
 \end{itemize}
 }
 
 \cventry{Feb 2019 - Feb 2020}{Backend Developer Intern}{Alta Rail Technology}{Colombo, Brazil}{}{
 \begin{itemize}
-\item Developed real-time train monitoring dashboard with Django, integrated with Elasticsearch for telemetry analytics
-\item Validated backend services with pytest and optimized satellite communication, reducing transmission costs 25\%
+\item Developed real-time train monitoring dashboard with Django and Elasticsearch for telemetry analytics, and optimized satellite communication, reducing transmission costs 25\%
 \end{itemize}
 }
 
 \cventry{Jan 2017 - Dec 2017}{Embedded Systems Intern}{T2I Group}{Curitiba, Brazil}{}{
 \begin{itemize}
-\item Built OBD-II fleet tracking device (PIC18F, GSM/GPRS) with a web-based monitoring backend
-\item Created Raspberry Pi automation system with Vue.js dashboard and SQLite data store
+\item Built OBD-II fleet tracking device (PIC18F, GSM/GPRS) with a web-based monitoring backend and Raspberry Pi automation system
 \end{itemize}
 }
 
 \section{Technical Skills}
 \cvitem{Languages}{Python, TypeScript, JavaScript, SQL, C/C++, Bash}
-\cvitem{Backend}{Django, FastAPI, Flask, Express.js, SQLAlchemy, Pydantic, Celery, asyncio, pytest}
+\cvitem{Backend}{FastAPI, Django, Flask, Express.js, SQLAlchemy, Pydantic, Celery, asyncio, pytest, PostgreSQL, MySQL, MongoDB, Elasticsearch, SQLite, Redis, REST API Design, Microservices}
 \cvitem{Frontend}{Vue.js, HTML, CSS, TailwindCSS, Astro, Vite, Webpack}
-\cvitem{Databases}{PostgreSQL, MySQL, MongoDB, Elasticsearch, SQLite, Redis}
-\cvitem{Cloud \& Virtualization}{AWS (EC2, S3, Lambda, IAM, VPC), OpenStack (Glance, Nova, Cinder), GCP, KVM/QEMU, Incus, Packer}
-\cvitem{DevOps \& IaC}{Terraform, Ansible, Docker, Kubernetes, GitLab CI/CD, GitHub Actions, ArgoCD, OpenTelemetry, GitHub Enterprise}
-\cvitem{Methodologies}{REST API Design, Microservices, Agile/Scrum, DevOps, Full-Stack Development, Zero-Trust Security, Cloud Migration}
+\cvitem{Cloud \& DevOps}{AWS (EC2, S3, Lambda, IAM, VPC), OpenStack (Glance, Nova, Cinder), GCP, KVM/QEMU, Incus, Packer, Terraform, Ansible, Docker, Kubernetes, GitLab CI/CD, GitHub Actions, GitHub Enterprise, ArgoCD, Zero-Trust Security, Cloud Migration}
+\cvitem{AI \& Observability}{OpenTelemetry v2, Distributed Tracing, GenAI and LLM Observability, AI Coding Agent Orchestration and Code Review}
+\cvitem{Practices}{Agile/Scrum, DevOps, Full-Stack Development}
 \cvitem{Spoken Languages}{Portuguese (Native), English (Fluent), Spanish (Conversational)}
 
 \section{Education}
